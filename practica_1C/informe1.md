@@ -2,7 +2,7 @@
 ## Universidad Industrial de Santander
 
 ---
-# Práctica 1: TÍTULO PRÁCTICA
+# Práctica 1: Mediciones de potencia y frecuencia
 
 ### Integrantes
 - **John David Llamas Plata** - 2161740
@@ -42,14 +42,32 @@ Cada práctica contará con preguntas orientadoras para la elaboración de la in
 - ¿Qué pasa cuando se asigna una frecuencia de muestreo inadecuada?
 
 ### Procedimiento
-Debe basarse en las acciones efectivamente realizadas durante el laboratorio, describiendo los procesos realizados y los resultados obtenidos. Para cada práctica se pueden brindar preguntas orientadoras o pasos a seguir para establecer lo que se espera lograr/estudiar/analizar/obtener/comparar. Por ejemplo:
-- Describa los procesos realizados en el laboratorio  y los resultados obtenidos.
-- ¿Cómo se alcanza el límite de Nyquist y que pasa cuando se disminuye de este?
-- ¿Por qué al interpolar una señal en GNURADIO su frecuencia disminuye?
-- ¿Por qué al diezmar una señal en GNURADIO su frecuencia aumenta?
-- ¿Cómo se puede determinar la frecuencia máxima de una señal desde lo experimental?
-- ¿Qué le sucede a una señal de audio cuando no se respeta el teorema de Nyquist?
-- Describa las funciones logradas con el Ecualizador desarrollado con GNURadio.
+
+### Actividad 1. Revisión de Especificaciones de los Equipos
+USRP 2920:
+1. Rango de frecuencia: 50 MHz a 2.2 GHz.
+2. Paso de frecuencia: <1 kHz.
+3. Maxima potencia de salida (Pout): 50mW a 100 mW (17 dBm a 20 dBm).
+4. Rango de ganancia: 0 a 31 dB
+5. Paso de ganancia: 1.0 dB
+
+Osciloscopio R&S RTB2004:
+1. 4 canales analógicos cn ancho de banda de 300 MHz.
+2. Rango de voltaje: +-5V a +- 50V (con atenuación de la sonda)
+3. Tasa de muestreo: Máximo 5 GSa/s en 2 canales activos. 2.5 GSa/s (con los 4 canales analógicos activos).
+4. 
+5. 
+
+Analizador de Espectros R&S FPC1000:
+1. 
+2. 
+3. 
+4. 
+5. 
+###Actividad 2: Simulación de Señales en GNU Radio
+
+###Actividad 3: Transmisión y Medición de Señales con el USRP 2920
+
 
 ### Conclusiones
 Se sintetizan los principales aportes y puntos relevantes de la práctica, evitando repetir lo ya consignado en las otras secciones del informe. 
