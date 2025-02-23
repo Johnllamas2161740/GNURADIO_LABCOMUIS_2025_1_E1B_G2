@@ -45,28 +45,39 @@ Cada práctica contará con preguntas orientadoras para la elaboración de la in
 
 ### Actividad 1. Revisión de Especificaciones de los Equipos
 USRP 2920:
+
+<img src="https://github.com/user-attachments/assets/4ad3d115-dc44-4082-8e41-10f72034a658" alt="USRP 2920" width="300">
+
 1. Rango de frecuencia: 50 MHz a 2.2 GHz.
 2. Paso de frecuencia: <1 kHz.
 3. Maxima potencia de salida (Pout): 50mW a 100 mW (17 dBm a 20 dBm).
-4. Rango de ganancia: 0 a 31 dB
-5. Paso de ganancia: 1.0 dB
+4. Rango de ganancia: 0 a 31 dB.
+5. Paso de ganancia: 1.0 dB.
 
 Osciloscopio R&S RTB2004:
-1. Ancho de banda: 70 MHz a 300 MHz
-2. Frecuencia de muestreo: hasta 2.5 Gs/s (gigamuestras por segundo)
-3. Profundidad de memoria: hasta 20 megamuestras
-4. Resolución del ADC: 10 bit
+
+<img src="https://github.com/user-attachments/assets/36bab015-f3ee-41de-810a-c45eb8a5e04c" alt="USRP 2920" width="300">
+
+1. Ancho de banda: 70 MHz a 300 MHz.
+2. Frecuencia de muestreo: hasta 2.5 Gs/s (gigamuestras por segundo).
+3. Profundidad de memoria: hasta 20 megamuestras.
+4. Resolución del ADC: 10 bit.
 5. Pantalla táctil capacitiva de 10.1”
 
 Analizador de Espectros R&S FPC1000:
+
+<img src=https://github.com/user-attachments/assets/5b431a0c-8743-4aeb-b34c-71f50436dc4f alt="USRP 2920" width="300">
+
+
 1. 
 2. 
 3. 
 4. 
 5. 
-###Actividad 2: Simulación de Señales en GNU Radio
 
-###Actividad 3: Transmisión y Medición de Señales con el USRP 2920
+### Actividad 2: Simulación de Señales en GNU Radio
+
+### Actividad 3: Transmisión y Medición de Señales con el USRP 2920
 
 
 ### Conclusiones
