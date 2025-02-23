@@ -52,11 +52,11 @@ USRP 2920:
 5. Paso de ganancia: 1.0 dB
 
 Osciloscopio R&S RTB2004:
-1. 4 canales analógicos cn ancho de banda de 300 MHz.
-2. Rango de voltaje: +-5V a +- 50V (con atenuación de la sonda)
-3. Tasa de muestreo: Máximo 5 GSa/s en 2 canales activos. 2.5 GSa/s (con los 4 canales analógicos activos).
-4. 
-5. 
+1. Ancho de banda: 70 MHz a 300 MHz
+2. Frecuencia de muestreo: hasta 2.5 Gs/s (gigamuestras por segundo)
+3. Profundidad de memoria: hasta 20 megamuestras
+4. Resolución del ADC: 10 bit
+5. Pantalla táctil capacitiva de 10.1”
 
 Analizador de Espectros R&S FPC1000:
 1. 
