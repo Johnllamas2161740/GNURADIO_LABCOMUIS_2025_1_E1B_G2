@@ -77,11 +77,6 @@ Ejemplo de referencia:
 
 - [Proakis, 2014] J. Proakis, M. Salehi. Fundamentals of communication systems. 2 ed. England: Pearson Education Limited, 2014. p. 164-165, 346. Chapter 5 In: [Biblioteca UIS](https://uis.primo.exlibrisgroup.com/permalink/57UIDS_INST/63p0of/cdi_askewsholts_vlebooks_9781292015699)
 
----
-# Ejemplos usando Markdown
-
-Volver al [INICIO](#laboratorio-de-comunicaciones)
-
 ## Inclusión de Imágenes
 ### Imagen de referencia dentro del repositorio:
 ![Networking](my%20file/test.png)
