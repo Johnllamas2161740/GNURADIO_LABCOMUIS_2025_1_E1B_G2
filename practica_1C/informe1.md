@@ -69,11 +69,11 @@ Analizador de Espectros R&S FPC1000:
 <img src=https://github.com/user-attachments/assets/5b431a0c-8743-4aeb-b34c-71f50436dc4f alt="USRP 2920" width="300">
 
 
-1. 
-2. 
-3. 
-4. 
-5. 
+1. Rango de frecuencia: 5 kHz to 1 GHz
+2. Ancho de banda de resolución (RBW): desde 1 Hz hasta 3 MHz.
+3. Conectividad remota (Wi-Fi y LAN).
+4. Tiempo de barrido: 100 µs a 100 s para span = 0 Hz. 20 ms a 1000 s para 10 Hz ≤ span ≤ 600 MHz. (20 ms × span / 600 MHz) a 1000 s para span > 600 MHz
+5. Rango de visualización: nivel de ruido mostrado hasta +30 dBm
 
 ### Actividad 2: Simulación de Señales en GNU Radio
 
