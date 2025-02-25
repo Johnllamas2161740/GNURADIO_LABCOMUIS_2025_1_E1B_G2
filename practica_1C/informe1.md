@@ -89,9 +89,10 @@ Cambiar la forma de la onda a una señal cuadrada modifica notablemente el espec
 La forma de onda triangular muestra un comportamiento similar a la cuadrada en el sentido de que, si bien los espectros son diferentes, se mantiene la idea de que exoste simetria para para la señal real y asimetria para la señal compleja.
 ![image](https://github.com/user-attachments/assets/e2b69f65-5fd1-48f7-94fe-73c270289c70)
 
-frecuencia y fase
+Modificar la fase no tiene efecto en la grafica del espectro debido a que esta es una gráfica de magnitud, por otro lado, aumentar o disminuir la frecuencia cambia tanto la grafica de amplitud vs tiempo como los armonicos del espectro, se evidencia que los cambios hechos concuerdan con lo esperado en las gráficas.
 ![image](https://github.com/user-attachments/assets/b36c1b47-ea23-4541-858c-30402ebd2dc9)
 
+*Modifique el nivel de ruido del modelo de canal y analice el efecto en tiempo y frecuencia.
 
 ### Actividad 3: Transmisión y Medición de Señales con el USRP 2920
 
