@@ -77,17 +77,16 @@ Analizador de Espectros R&S FPC1000:
 
 ### Actividad 2: Simulación de Señales en GNU Radio
 
-Al seleccionar Source Type: Float la gráfica de amplitud vs tiempo muestra una señal completamente real, reconocible por ser de color azul, mientras tanto la magnitud del espectro es par con picos en 300 [Hz] y -300 [Hz], lo cual concuerda con lo esperado al seleccionar este tipo de señal y frecuencia.
+Al seleccionar Source Type: Float la gráfica de amplitud vs tiempo muestra una señal completamente real, la cual se visualiza de color azul, mientras tanto la magnitud del espectro es par con picos en 300 [Hz] y -300 [Hz], lo cual concuerda con lo esperado al seleccionar este tipo de señal y frecuencia.
 ![image](https://github.com/user-attachments/assets/83601a53-c3f7-48e3-aaba-02836c1e87ab)
 
-complex
-
+Al seleccionar Source Type: Complex la gráfica de amplitud vs tiempo muestra una señal compleja, la parte real es azul y la parte imaginaria es roja, el espectro muestra un solo pico en 300 [Hz].
 ![image](https://github.com/user-attachments/assets/712d1eeb-33fb-4a6f-8f0d-09c48f561b67)
 
-square
+Cambiar la forma de la onda a una señal cuadrada modifica notablemente el espectro de la señal, que en caso de ser una señal real muestra multiples impulsos con simetria par, y en caso de ser una señal compleja el espectro es asimetrico.
 ![image](https://github.com/user-attachments/assets/5baf11d6-ba6e-486b-88c8-cc84a24f2e79)
 
-triangle
+La forma de onda triangular muestra un comportamiento similar a la cuadrada en el sentido de que, si bien los espectros son diferentes, se mantiene la idea de que exoste simetria para para la señal real y asimetria para la señal compleja.
 ![image](https://github.com/user-attachments/assets/e2b69f65-5fd1-48f7-94fe-73c270289c70)
 
 frecuencia y fase
