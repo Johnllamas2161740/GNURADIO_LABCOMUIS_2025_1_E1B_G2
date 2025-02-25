@@ -77,6 +77,23 @@ Analizador de Espectros R&S FPC1000:
 
 ### Actividad 2: Simulación de Señales en GNU Radio
 
+Al seleccionar Source Type: Float la gráfica de amplitud vs tiempo muestra una señal completamente real, reconocible por ser de color azul, mientras tanto la magnitud del espectro es par con picos en 300 [Hz] y -300 [Hz], lo cual concuerda con lo esperado al seleccionar este tipo de señal y frecuencia.
+![image](https://github.com/user-attachments/assets/83601a53-c3f7-48e3-aaba-02836c1e87ab)
+
+complex
+
+![image](https://github.com/user-attachments/assets/712d1eeb-33fb-4a6f-8f0d-09c48f561b67)
+
+square
+![image](https://github.com/user-attachments/assets/5baf11d6-ba6e-486b-88c8-cc84a24f2e79)
+
+triangle
+![image](https://github.com/user-attachments/assets/e2b69f65-5fd1-48f7-94fe-73c270289c70)
+
+frecuencia y fase
+![image](https://github.com/user-attachments/assets/b36c1b47-ea23-4541-858c-30402ebd2dc9)
+
+
 ### Actividad 3: Transmisión y Medición de Señales con el USRP 2920
 
 
