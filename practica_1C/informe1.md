@@ -44,7 +44,7 @@ Cada práctica contará con preguntas orientadoras para la elaboración de la in
 ### Procedimiento
 
 ### Actividad 1. Revisión de Especificaciones de los Equipos
-USRP 2920:
+#### USRP 2920:
 
 <img src="https://github.com/user-attachments/assets/4ad3d115-dc44-4082-8e41-10f72034a658" alt="USRP 2920" width="300">
 
@@ -54,7 +54,7 @@ USRP 2920:
 4. Rango de ganancia: 0 a 31 dB.
 5. Paso de ganancia: 1.0 dB.
 
-Osciloscopio R&S RTB2004:
+#### Osciloscopio R&S RTB2004:
 
 <img src="https://github.com/user-attachments/assets/36bab015-f3ee-41de-810a-c45eb8a5e04c" alt="USRP 2920" width="300">
 
@@ -64,7 +64,7 @@ Osciloscopio R&S RTB2004:
 4. Resolución del ADC: 10 bit.
 5. Pantalla táctil capacitiva de 10.1”
 
-Analizador de Espectros R&S FPC1000:
+#### Analizador de Espectros R&S FPC1000:
 
 <img src=https://github.com/user-attachments/assets/5b431a0c-8743-4aeb-b34c-71f50436dc4f alt="USRP 2920" width="300">
 
@@ -77,22 +77,31 @@ Analizador de Espectros R&S FPC1000:
 
 ### Actividad 2: Simulación de Señales en GNU Radio
 
-Al seleccionar Source Type: Float la gráfica de amplitud vs tiempo muestra una señal completamente real, la cual se visualiza de color azul, mientras tanto la magnitud del espectro es par con picos en 300 [Hz] y -300 [Hz], lo cual concuerda con lo esperado al seleccionar este tipo de señal y frecuencia.
+- Al seleccionar Source Type: Float la gráfica de amplitud vs tiempo muestra una señal completamente real, la cual se visualiza de color azul, mientras tanto la magnitud del espectro es par con picos en 300 [Hz] y -300 [Hz], lo cual concuerda con lo esperado al seleccionar este tipo de señal y frecuencia.
 ![image](https://github.com/user-attachments/assets/83601a53-c3f7-48e3-aaba-02836c1e87ab)
 
-Al seleccionar Source Type: Complex la gráfica de amplitud vs tiempo muestra una señal compleja, la parte real es azul y la parte imaginaria es roja, el espectro muestra un solo pico en 300 [Hz].
+- Al seleccionar Source Type: Complex la gráfica de amplitud vs tiempo muestra una señal compleja, la parte real es azul y la parte imaginaria es roja, el espectro muestra un solo pico en 300 [Hz].
 ![image](https://github.com/user-attachments/assets/712d1eeb-33fb-4a6f-8f0d-09c48f561b67)
 
-Cambiar la forma de la onda a una señal cuadrada modifica notablemente el espectro de la señal, que en caso de ser una señal real muestra multiples impulsos con simetria par, y en caso de ser una señal compleja el espectro es asimetrico.
+- Cambiar la forma de la onda a una señal cuadrada modifica notablemente el espectro de la señal, que en caso de ser una señal real muestra multiples impulsos con simetria par, y en caso de ser una señal compleja el espectro es asimetrico.
 ![image](https://github.com/user-attachments/assets/5baf11d6-ba6e-486b-88c8-cc84a24f2e79)
 
-La forma de onda triangular muestra un comportamiento similar a la cuadrada en el sentido de que, si bien los espectros son diferentes, se mantiene la idea de que exoste simetria para para la señal real y asimetria para la señal compleja.
+- La forma de onda triangular muestra un comportamiento similar a la cuadrada en el sentido de que, si bien los espectros son diferentes, se mantiene la idea de que exoste simetria para para la señal real y asimetria para la señal compleja.
 ![image](https://github.com/user-attachments/assets/e2b69f65-5fd1-48f7-94fe-73c270289c70)
 
-Modificar la fase no tiene efecto en la grafica del espectro debido a que esta es una gráfica de magnitud, por otro lado, aumentar o disminuir la frecuencia cambia tanto la grafica de amplitud vs tiempo como los armonicos del espectro, se evidencia que los cambios hechos concuerdan con lo esperado en las gráficas.
+- Modificar la fase no tiene efecto en la grafica del espectro debido a que esta es una gráfica de magnitud, por otro lado, aumentar o disminuir la frecuencia cambia tanto la grafica de amplitud vs tiempo como los armonicos del espectro, se evidencia que los cambios hechos concuerdan con lo esperado en las gráficas.
 ![image](https://github.com/user-attachments/assets/b36c1b47-ea23-4541-858c-30402ebd2dc9)
 
-*Modifique el nivel de ruido del modelo de canal y analice el efecto en tiempo y frecuencia.
+- Modificar la amplitud hace que la gráfica del espectro se desplace verticalmente, se evidencia que aumentar o dismunirla tambien aumenta o disminuye la ganancia en [dB] respectivamente.
+![image](https://github.com/user-attachments/assets/042b47b7-0edc-44f5-ac68-093a2d52b1d8)
+![image](https://github.com/user-attachments/assets/2119bcad-d6cf-4970-a877-e33928d3592c)
+
+
+- Aumentar el nivel de ruido distorsiona la onda para hacerla tener un comportamiento mas aleatorio e indeseado. Si el ruido es demasiado alto puede llegar al nivel de los armonicos e incluso cubrirlos, obstaculizando el analisis correcto del espectro.
+![image](https://github.com/user-attachments/assets/f4e0150c-5aa3-47bb-bca0-91db67345ae5)
+![image](https://github.com/user-attachments/assets/d41ad25a-525a-4fb5-9491-e5a872ef646c)
+
+
 
 ### Actividad 3: Transmisión y Medición de Señales con el USRP 2920
 
