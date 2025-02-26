@@ -105,6 +105,12 @@ Cada práctica contará con preguntas orientadoras para la elaboración de la in
 
 ### Actividad 3: Transmisión y Medición de Señales con el USRP 2920
 
+Conecte una antena apropiada a la entrada del analizador de espectros y observe el espectro de una señal FM (las estaciones FM se sitúan entre los 88 MHz y 108 MHz). Mida su ancho de banda y relación señal a ruido.
+(pegar fotos)
+usamos un RBW de 
+potencia: -65 dBm
+ancho de banda: 190 [kHz]
+relacion señal a ruido ??
 
 ### Conclusiones
 Se sintetizan los principales aportes y puntos relevantes de la práctica, evitando repetir lo ya consignado en las otras secciones del informe. 
