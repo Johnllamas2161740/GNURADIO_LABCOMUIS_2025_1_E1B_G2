@@ -89,6 +89,7 @@ Cada práctica contará con preguntas orientadoras para la elaboración de la in
 - La forma de onda triangular muestra un comportamiento similar a la cuadrada en el sentido de que, si bien los espectros son diferentes, se mantiene la idea de que exoste simetria para para la señal real y asimetria para la señal compleja.
 ![image](https://github.com/user-attachments/assets/e2b69f65-5fd1-48f7-94fe-73c270289c70)
 
+
 - Modificar la fase no tiene efecto en la grafica del espectro debido a que esta es una gráfica de magnitud, por otro lado, aumentar o disminuir la frecuencia cambia tanto la grafica de amplitud vs tiempo como los armonicos del espectro, se evidencia que los cambios hechos concuerdan con lo esperado en las gráficas.
 ![image](https://github.com/user-attachments/assets/b36c1b47-ea23-4541-858c-30402ebd2dc9)
 
@@ -106,7 +107,15 @@ Cada práctica contará con preguntas orientadoras para la elaboración de la in
 ### Actividad 3: Transmisión y Medición de Señales con el USRP 2920
 
 Conecte una antena apropiada a la entrada del analizador de espectros y observe el espectro de una señal FM (las estaciones FM se sitúan entre los 88 MHz y 108 MHz). Mida su ancho de banda y relación señal a ruido.
-(pegar fotos)
+![Sin título](https://github.com/user-attachments/assets/ae41d35b-3879-4a53-aba1-e541f653d9ac)
+Para un span total de 1 MHz dividido en 10 partes se tiene que el span es de 100 kHz/div. Usando el metodo de -20dB para calcular el ancho de banda notamos que la potencia pico se encuentra cercana a -70dBm, al restar -20dBm llegaria a -90dBm, un valor para el cual el espectro alcanza a tomar aproximadamente 2 divisiones del span, y gracias a esto concluimos que el ancho de banda (BW) del espectro es de aproximadamente 200 kHz.
+Para calcular la relacion señal a ruido (SNR) consideramos usar dos métodos diferentes, el primero utiliza un potencia de la señal promedio de -68.57 dBm que es la mostrada en el analizador de espectro en la frecuencia central, y un ruido de aproximadamente -95 dBm, se calcula SNR como:
+
+![image](https://github.com/user-attachments/assets/7a0c1efc-0d4b-42ad-930b-7760dd87c94c)
+
+El segundo método sería utilizar la potencial total del espectro y el ruido para el ancho de banda de 200 kHz
+
+
 usamos un RBW de 
 potencia: -65 dBm
 ancho de banda: 190 [kHz]
