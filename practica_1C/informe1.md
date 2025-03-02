@@ -106,15 +106,31 @@ Cada práctica contará con preguntas orientadoras para la elaboración de la in
 
 ### Actividad 3: Transmisión y Medición de Señales con el USRP 2920
 
-Conecte una antena apropiada a la entrada del analizador de espectros y observe el espectro de una señal FM (las estaciones FM se sitúan entre los 88 MHz y 108 MHz). Mida su ancho de banda y relación señal a ruido.
+Hubo inconvenientes en la visualizacion de la señal transmitida por cable, especificamente ocurrió un desplazamiento del armonico que debia estar ubicado 100 MHz (portadora) + 1kHz (señal) y paso a estar ubicado en 100.1 MHz, o sea una diferencia de casi 100 kHz, que se mantenia a pesar de modificar la frecuencia en gnu radio.
+
+![Sin título](https://github.com/user-attachments/assets/3477cc11-994b-4b3d-afdc-9f8ae6757e62)
+
+Se observa un piso de ruido de -70 dBm para una RBW de 100 Hz, el piso de ruido normalizado se calcula de la siguiente forma:
+![image](https://github.com/user-attachments/assets/5529e773-d326-4522-aea0-678a2b02a75d)
+
+Volviendo al espectro de la señal, aparte de la incoherencia de desplazamiento en la frecuencia también hay armonicos indeseados generados cerca del pico mas alto, y la ganancia del transmisor que por defecto es de 30 dB no parece ser del todo exacta.
+![image](https://github.com/user-attachments/assets/7f8ac6e3-3296-4b69-93c4-048c5326e2d2)
+![image](https://github.com/user-attachments/assets/91953a48-bca9-4ef6-bef1-d8f992f2b2a2)
+cuadrado
+![image](https://github.com/user-attachments/assets/ded9ac88-6758-4327-b594-b0b4d14662bc)
+![image](https://github.com/user-attachments/assets/ccd5bfc1-0de2-4b0e-b0e9-a1ec7334aee1)
+
+
+
+
+Lo siguiente fue conectar una antena a la entrada del analizador de espectros y observar el espectro de una señal FM (situada entre la 88 MHz y 108 MHz)
 ![Sin título](https://github.com/user-attachments/assets/ae41d35b-3879-4a53-aba1-e541f653d9ac)
 La estacion seleccionada tiene una frecuencia central de 91.7 MHz. Para un span total de 1 MHz dividido en 10 partes se tiene que el span es de 100 kHz/div. Usando el metodo de -20dB para calcular el ancho de banda notamos que la potencia pico se encuentra cercana a -70dBm, al restar -20dBm llegaria a -90dBm, un valor para el cual el espectro alcanza a tomar aproximadamente 2 divisiones del span, y gracias a esto concluimos que el ancho de banda (BW) del espectro es de aproximadamente 200 kHz.
 Para calcular la relacion señal a ruido (SNR) se toma la potencia máxima de la señal de -68.57 dBm que es la mostrada en el analizador de espectro en la frecuencia central, y el ruido que es de aproximadamente -95 dBm, se calcula SNR como:
 
 ![image](https://github.com/user-attachments/assets/7a0c1efc-0d4b-42ad-930b-7760dd87c94c)
 
-Evalúe la respuesta en frecuencia del canal midiendo los cambios de ganancia del sistema cuando varía la frecuencia de portadora.
-Compare los resultados de transmitir usando un cable y usando antenas.
+A pesar de los inconvenientes ocurridos en la transmisión por cable se pudo observar correctamente el espectro mediante la antena en la frecuencia escogida. Al sintonizar otras frecuencias notamos picos de frecuencia similares a la escogida inicialmente, con una variacion de aproxinmadamente ±2 dB.
 
 ### Conclusiones
 Se sintetizan los principales aportes y puntos relevantes de la práctica, evitando repetir lo ya consignado en las otras secciones del informe. 
@@ -142,20 +158,6 @@ Ejemplo de referencia:
 ## Uso de Expresiones Matemáticas
 Se pueden incluir ecuaciones en el archivo `README.md` utilizando sintaxis similar a [LaTeX](https://manualdelatex.com/tutoriales/ecuaciones):
 
-### Ecuaciones en Línea
-```
-La energía de una señal exponencial es $E = \int_0^\infty A^2 e^{-2t/\tau} dt$.
-```
-**Salida renderizada:**
-La energía de una señal exponencial es $E = \int_0^\infty A^2 e^{-2t/\tau} dt$.
-
-### Ecuaciones en Bloque
-```
-$$E = \int_0^\infty A^2 e^{-2t/\tau} dt = \frac{A^2 \tau}{2}$$
-```
-**Salida renderizada**
-$$E = \int_0^\infty A^2 e^{-2t/\tau} dt = \frac{A^2 \tau}{2}$$
-
 ## Creación de Tablas
 
 **Tabla 1.** Ejemplo de tabla en Markdown.
@@ -166,15 +168,7 @@ $$E = \int_0^\infty A^2 e^{-2t/\tau} dt = \frac{A^2 \tau}{2}$$
 | Amplitud (V) | 5 |
 | Ciclo útil (%) | 50 |
 
-## Inclusión de código
-
-```python
-def hello_world():
-    print("Hello, World!")
-```
-
-También es posible resaltar texto tipo código como `print("Hello, World!")`.
 
 ---
 
-Volver al [INICIO](#laboratorio-de-comunicaciones)ile
+Volver al [INICIO](#laboratorio-de-comunicaciones)
