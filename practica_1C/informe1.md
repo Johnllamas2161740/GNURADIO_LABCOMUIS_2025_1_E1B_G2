@@ -108,18 +108,13 @@ Cada práctica contará con preguntas orientadoras para la elaboración de la in
 
 Conecte una antena apropiada a la entrada del analizador de espectros y observe el espectro de una señal FM (las estaciones FM se sitúan entre los 88 MHz y 108 MHz). Mida su ancho de banda y relación señal a ruido.
 ![Sin título](https://github.com/user-attachments/assets/ae41d35b-3879-4a53-aba1-e541f653d9ac)
-Para un span total de 1 MHz dividido en 10 partes se tiene que el span es de 100 kHz/div. Usando el metodo de -20dB para calcular el ancho de banda notamos que la potencia pico se encuentra cercana a -70dBm, al restar -20dBm llegaria a -90dBm, un valor para el cual el espectro alcanza a tomar aproximadamente 2 divisiones del span, y gracias a esto concluimos que el ancho de banda (BW) del espectro es de aproximadamente 200 kHz.
-Para calcular la relacion señal a ruido (SNR) consideramos usar dos métodos diferentes, el primero utiliza un potencia de la señal promedio de -68.57 dBm que es la mostrada en el analizador de espectro en la frecuencia central, y un ruido de aproximadamente -95 dBm, se calcula SNR como:
+La estacion seleccionada tiene una frecuencia central de 91.7 MHz. Para un span total de 1 MHz dividido en 10 partes se tiene que el span es de 100 kHz/div. Usando el metodo de -20dB para calcular el ancho de banda notamos que la potencia pico se encuentra cercana a -70dBm, al restar -20dBm llegaria a -90dBm, un valor para el cual el espectro alcanza a tomar aproximadamente 2 divisiones del span, y gracias a esto concluimos que el ancho de banda (BW) del espectro es de aproximadamente 200 kHz.
+Para calcular la relacion señal a ruido (SNR) se toma la potencia máxima de la señal de -68.57 dBm que es la mostrada en el analizador de espectro en la frecuencia central, y el ruido que es de aproximadamente -95 dBm, se calcula SNR como:
 
 ![image](https://github.com/user-attachments/assets/7a0c1efc-0d4b-42ad-930b-7760dd87c94c)
 
-El segundo método sería utilizar la potencial total del espectro y el ruido para el ancho de banda de 200 kHz
-
-
-usamos un RBW de 
-potencia: -65 dBm
-ancho de banda: 190 [kHz]
-relacion señal a ruido ??
+Evalúe la respuesta en frecuencia del canal midiendo los cambios de ganancia del sistema cuando varía la frecuencia de portadora.
+Compare los resultados de transmitir usando un cable y usando antenas.
 
 ### Conclusiones
 Se sintetizan los principales aportes y puntos relevantes de la práctica, evitando repetir lo ya consignado en las otras secciones del informe. 
