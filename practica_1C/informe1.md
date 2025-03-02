@@ -12,7 +12,7 @@ Escuela de Ingenierías Eléctrica, Electrónica y de Telecomunicaciones
 Universidad Industrial de Santander
 
 ### Fecha
-19 de febrero de 2025
+2 de marzo de 2025
 
 ---
 
@@ -44,6 +44,7 @@ Cada práctica contará con preguntas orientadoras para la elaboración de la in
 ### Procedimiento
 
 ### Actividad 1. Revisión de Especificaciones de los Equipos
+A continuación se describen algunas especificaciones importantes sobre los equipos utilizado en la práctica.
 #### USRP 2920:
 
 <img src="https://github.com/user-attachments/assets/4ad3d115-dc44-4082-8e41-10f72034a658" alt="USRP 2920" width="300">
@@ -116,7 +117,8 @@ Se observa un piso de ruido de -70 dBm para una RBW de 100 Hz, el piso de ruido 
 Volviendo al espectro de la señal, aparte de la incoherencia de desplazamiento en la frecuencia también hay armonicos indeseados generados cerca del pico mas alto, y la ganancia del transmisor que por defecto es de 30 dB no parece ser del todo exacta.
 ![image](https://github.com/user-attachments/assets/7f8ac6e3-3296-4b69-93c4-048c5326e2d2)
 ![image](https://github.com/user-attachments/assets/91953a48-bca9-4ef6-bef1-d8f992f2b2a2)
-cuadrado
+
+Al cambiar la forma de la onda coseno for una onda cuadrada cambia el espectro en gnu radio, en el analizador de espectro se observan los armonicos principales pero también otros indeseados.
 ![image](https://github.com/user-attachments/assets/ded9ac88-6758-4327-b594-b0b4d14662bc)
 ![image](https://github.com/user-attachments/assets/ccd5bfc1-0de2-4b0e-b0e9-a1ec7334aee1)
 
@@ -136,38 +138,10 @@ A pesar de los inconvenientes ocurridos en la transmisión por cable se pudo obs
 Se sintetizan los principales aportes y puntos relevantes de la práctica, evitando repetir lo ya consignado en las otras secciones del informe. 
 
 ### Referencias
-Ejemplo de referencia:
 
-- [Proakis, 2014] J. Proakis, M. Salehi. Fundamentals of communication systems. 2 ed. England: Pearson Education Limited, 2014. p. 164-165, 346. Chapter 5 In: [Biblioteca UIS](https://uis.primo.exlibrisgroup.com/permalink/57UIDS_INST/63p0of/cdi_askewsholts_vlebooks_9781292015699)
-
-## Inclusión de Imágenes
-### Imagen de referencia dentro del repositorio:
-![Networking](my%20file/test.png)
-
-### Imagen de fuente externa
-![GNU Radio logo](https://kb.ettus.com/images/thumb/5/50/gnuradio.png/600px-gnuradio.png)
-
-### Uso de html para cambiar escala de la imagen
-<img src="https://kb.ettus.com/images/thumb/5/50/gnuradio.png/600px-gnuradio.png" alt="GNU Radio Logo" width="300">
-
-## Creación de hipevínculos 
-- [Aprende Markdown](https://markdown.es/)
-- [Más acerca de Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-- [Abrir documento en el repositorio](my%20file/test_file.txt). Si hay espacios en la ruta de su archivo, reemplácelos por `%20`.
-- Ir a una sección de este documento. Por ejemplo: [Ir a Contenido](#contenido) Tenga en cuenta escribir el título de la sección en minúsculas y los espacios reemplazarlos por guiones.
-## Uso de Expresiones Matemáticas
-Se pueden incluir ecuaciones en el archivo `README.md` utilizando sintaxis similar a [LaTeX](https://manualdelatex.com/tutoriales/ecuaciones):
-
-## Creación de Tablas
-
-**Tabla 1.** Ejemplo de tabla en Markdown.
-
-| Parámetro | Valor |
-|-----------|-------|
-| Frecuencia (Hz) | 1000 |
-| Amplitud (V) | 5 |
-| Ciclo útil (%) | 50 |
-
+- [Rohde & Schwarz, 2017] Rohde & Schwarz, *R&S RTB2000 Digital Oscilloscope: User Manual*, Rohde & Schwarz, 2017
+- [Rohde & Schwarz, 2017] Rohde & Schwarz, *R&S®FPC1000 Spectrum Analyzer: User Manual*, Rohde & Schwarz GmbH & Co. KG, 2017.
+- [NI, 2025] National Instruments, *USRP-2920 Specifications*, National Instruments, Feb. 2025.
 
 ---
 
