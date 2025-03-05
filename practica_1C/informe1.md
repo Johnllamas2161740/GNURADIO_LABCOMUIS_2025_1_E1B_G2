@@ -27,19 +27,16 @@ Uso de IA: [Indicar si se usó IA y para qué aspectos específicos, por ejemplo
 ## Contenido
 
 ### Resumen
-Descripción en no más de 150 palabras del contenido de la práctica. Debe ser conciso y brindar una idea clara sobre el trabajo realizado y sus conclusiones.
-
-**Palabras clave:** de 2 a 5 palabras clave. 
+A continuación se presentará en el siguiente informe de laboratorio la primera práctica del semestre en el cual nos familiarizaremos con el uso de tres equipos fundamentales, los cuales serán usados en los próximos meses, los cuales son el USRP 2920, el osciloscopio R&S RTB2004 y el analizador de espectros R&S FPC1000, en los cuales introduciremos sus principales especificaciones y cómo trabjan cada uno de ellos, para después empezar con la práctica simulando señales con diferentes tipos de ondas y amplitudes, en esta parte tendremos que teneer en cuenta ciertos factores como son el ancho de banda y frecuencias centrales entre otros para hacer nuestros respectivos análisis.
 
 ### Introducción
-Cada práctica contará con preguntas orientadoras para la elaboración de la introducción. Por ejemplo: 
-- ¿Qué tan importante es la teoría de muestreo en el procesamiento de señales?
-- ¿Cuáles son los principales potenciales de GNURADIO en el laboratorio de comunicaciones?
-- ¿Qué pasa cuando se alcanza el límite de Nyquist?
-- ¿Qué tan alta debe ser la relación entre la frecuencia de muestreo y la frecuencia de la señal para visualizar la señal correctamente?
-- ¿Cuándo es importante interpolar una señal?
-- ¿Cuándo es importante diezmar una señal?
-- ¿Qué pasa cuando se asigna una frecuencia de muestreo inadecuada?
+En el desarrollo de sistemas de comunicación modernos, la integración de hardware especializado y herramientas de software es esencial para validar conceptos teóricos y optimizar procesos prácticos. Este informe aborda el uso de tres dispositivos clave en un laboratorio de comunicaciones: el USRP 2920 (plataforma de radio definida por software), el osciloscopio R&S RTB2004 y el analizador de espectros R&S FPC1000, cuyo uso combinado permite explorar desde la generación de señales hasta su análisis en los dominios temporal y de frecuencia. A través de su interacción, se evidencian principios fundamentales como la teoría de muestreo, las limitaciones físicas en la adquisición de señales y el papel de herramientas como GNU Radio en la implementación de sistemas flexibles y adaptativos.  
+
+La teoría de muestreo, basda en el teorema de Nyquist-Shannon, es un pilar crítico al trabajar con dispositivos como el USRP 2920. Por ejemplo, al configurar su frecuencia de muestreo, se define la fidelidad con la que una señal analógica es digitalizada. Si se alcanza el límite de Nyquist (muestreo a exactamente el doble del ancho de banda de la señal), se garantiza una reconstrucción teóricamente perfecta. Sin embargo, superar este umbral con una frecuencia de muestreo adecuada evita el aliasing, fenómeno que distorsiona irremediablemente la señal, como podría observarse en el osciloscopio RTB2004 mediante la aparición de componentes espectrales falsas. Por el contrario, una frecuencia de muestreo inadecuada, inferior a la requerida, no solo compromete la integridad de la señal, sino que también genera ambigüedades en su representación digital, un error que el analizador FPC1000 revelaría como superposición de frecuencias en el espectro.  
+
+En este escenario, GNU Radio emerge como un aliado indispensable. Su arquitectura basada en bloques facilita el diseño de flujos de procesamiento de señales personalizados, integrando el USRP 2920 para transmisión/recepción y permitiendo validar resultados con los instrumentos de medición. Sus principales potenciales radican en la capacidad de prototipado rápido, la implementación de esquemas de modulación complejos y la experimentación con técnicas como el filtrado adaptativo o el manejo de señales en tiempo real. Además, GNU Radio permite visualizar en práctica cómo un muestreo incorrecto afecta a las etapas siguientes del sistema, reforzando la importancia de parámetros bien definidos.  
+
+La combinación de estos dispositivos no solo subraya la relación independiente entre teoría y práctica, sino que también expone los riesgos de ignorar restricciones físicas y matemáticas en el procesamiento de señales. Así, este informe busca demostrar cómo un laboratorio equipado con herramientas versátiles y precisas, como las mencionadas, se convierte en un espacio idóneo para explorar los límites de las comunicaciones digitales y validar soluciones innovadoras ante desafíos como el aliasing o la optimización del ancho de banda.
 
 ### Procedimiento
 
