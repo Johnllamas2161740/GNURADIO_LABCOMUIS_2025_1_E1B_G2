@@ -78,8 +78,30 @@ triangular_4
 
 ### Actividad 4:  Efectos de los fenómenos de canal en la conversión de frecuencia
 
+visualizar_g_compleja
 
+![image](https://github.com/user-attachments/assets/24049f1d-b9c0-4c47-a020-093f2cb4b06d)
 
+carrier_daña_señal
+![image](https://github.com/user-attachments/assets/de5c9c88-14e9-4cc7-842d-56584a43fd6e)
+
+freq_offset1
+![image](https://github.com/user-attachments/assets/69c22cff-42b8-4131-865d-90245b8ab6ef)
+
+freq_offset2
+![image](https://github.com/user-attachments/assets/ebf89ea3-f750-40b8-8867-6febbf8e0034)
+
+freq_offset3
+![image](https://github.com/user-attachments/assets/a8b1dfc5-72fb-43e0-93e5-ceffe9ed8e34)
+
+freque_offset4
+![image](https://github.com/user-attachments/assets/f117fc87-e87e-446e-ba47-86376abbc31a)
+
+freq_offset5_espectro
+![image](https://github.com/user-attachments/assets/7393114f-3d93-4b5f-aa39-5bf12db5593b)
+
+observacion_ganancia
+![image](https://github.com/user-attachments/assets/d0baff28-9859-4b76-9426-233607c52a5c)
 
 
 ### Conclusiones
