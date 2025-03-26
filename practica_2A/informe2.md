@@ -75,6 +75,16 @@ triangular_4
 
 ### Actividad 3: Fenómenos de canal en el analizador de espectro
 
+captura?
+![image](https://github.com/user-attachments/assets/832fdd2a-7af4-4cff-8a6b-84f8f6021b88)
+
+triangularact2
+![image](https://github.com/user-attachments/assets/56c21060-30f4-4c3b-bfa3-a36da3c8aefa)
+
+triangularact2_2
+![image](https://github.com/user-attachments/assets/c7fbb41b-72f6-4989-b706-15a4c1f138ce)
+
+
 
 ### Actividad 4:  Efectos de los fenómenos de canal en la conversión de frecuencia
 
