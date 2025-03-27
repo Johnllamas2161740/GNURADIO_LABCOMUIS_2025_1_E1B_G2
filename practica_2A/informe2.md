@@ -72,6 +72,15 @@ triangular_4
 
 ### Actividad 2: Fenómenos de canal en el osciloscopio
 
+triangular
+![image](https://github.com/user-attachments/assets/022d888a-a73a-47d8-88a3-212a453b3bb5)
+
+senoidal
+![image](https://github.com/user-attachments/assets/344aa7cb-3728-46c9-b8a3-4aeb68d617ec)
+
+senoidal con ruido
+![image](https://github.com/user-attachments/assets/431a6291-44f1-472e-89ec-2b9b17c0a8af)
+
 
 ### Actividad 3: Fenómenos de canal en el analizador de espectro
 
