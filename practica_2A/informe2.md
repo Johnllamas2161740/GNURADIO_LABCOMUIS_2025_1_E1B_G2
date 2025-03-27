@@ -45,22 +45,15 @@ En esta segunda imagen cambiamos la forma de onda por una cuadrada con frecuenci
 Para esta señal triangular aumentamos el voltaje de ruido a 0.3[V], y notamos que las frecuencias de corte establecidas (340[Hz] y 21.050[kHz]) no son buenas porque el ancho de banda es innecesariamente grande para la frecuencia de la señal establecida en 3.6 [kHz], esto hace que el filtro deje pasar demasiado ruido, y para mejorar los resultados se priorizaría disminuir la frecuencia de corte alta a un valor más bajo, alrededor de 5[kHz].
 ![image](https://github.com/user-attachments/assets/acd20367-7410-4e68-b063-e943798d8855)
 
-coseno_1
+En las siguientes imagenes se muestra el efecto del ruido en el dominio de la frecuencia, se crean varios armonicos alrededor de la frecuencia fundamental.
 ![image](https://github.com/user-attachments/assets/3d494f87-bfe1-47df-be42-15da60e671b9)
-
-coseno_2
-![image](https://github.com/user-attachments/assets/f00efeb4-c1f5-4ff9-83e7-c217ef66eafa)
-
-coseno_3
 ![image](https://github.com/user-attachments/assets/953a1ab8-0f76-4f8c-ac4e-d2808f9e64f6)
 
-coseno_4
-![image](https://github.com/user-attachments/assets/5d8ea3ac-5a98-4a20-ab65-e95613519d60)
+Modificar las frecuencias de corte del filtro a 1.97[kHz] y 12.6[kHz] hace que el filtro no contenga la frecuencia de la señal de 1[kHz], esto hace que se elimine por completo. 
+![image](https://github.com/user-attachments/assets/f00efeb4-c1f5-4ff9-83e7-c217ef66eafa)
 
-triangular_1
+Para esta señal triangular notamos como las frecuencias de corte del filtro no solo eliminan el ruido sino que pueden tener el efecto adverso de deformar la onda al eliminar las componentes de frecuencia esenciales que componen una señal triangular y la convierten en una senoidal.
 ![image](https://github.com/user-attachments/assets/b7efd8ca-2b91-4e45-8635-de726d55019f)
-
-triangular_2
 ![image](https://github.com/user-attachments/assets/cc085435-7267-44a1-bbeb-849db7117501)
 
 triangular_3
