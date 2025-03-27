@@ -36,7 +36,7 @@ En
 
 ### Actividad 1. Actividades de simulación de canal en GNU Radio
 
-act1_seno1
+Se establece mediante prueba y error una frecuencia de muestreo de 25e6/32[Hz] = 781250[Hz] en GNU radio buscando que las señales puedan ser visualizadas correctamente sin que el computador se ralentice demasiado. Inicialmente generamos una señal senoidal de frecuencia 8[kHz], amplitud 0.5[V] y ruido de 0.09[V]. El filtro con frecuencias de corte 340[Hz] y 21050[Hz] elimina el ruido
 ![image](https://github.com/user-attachments/assets/3ac17e59-2b61-4050-9250-4073f4f6cbf3)
 
 act1_square
@@ -124,8 +124,7 @@ observacion_ganancia
 
 
 ### Conclusiones
-El desarrollo de este laboratorio, c
-
+En la actividad 1, al introducir voltaje de ruido notamos que este se aplica tanto a la parte real como la imaginaria de la señal, teniendo en cuenta que la parte imaginaria deberia ser un cero constante para una señal real podemos concluir que el ruido no permite que las señales reales sean perfectamente reales, pues siempre habrá una pequeña componente imaginaria que se busca minimizar con el filtro para que pueda ser despreciada.
 ### Referencias (#####################)
 
 - [Rohde & Schwarz, 2017] Rohde & Schwarz, *R&S RTB2000 Digital Oscilloscope: User Manual*, Rohde & Schwarz, 2017
