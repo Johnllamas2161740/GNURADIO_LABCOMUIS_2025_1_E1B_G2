@@ -36,13 +36,13 @@ En
 
 ### Actividad 1. Actividades de simulación de canal en GNU Radio
 
-Se establece mediante prueba y error una frecuencia de muestreo de 25e6/32[Hz] = 781250[Hz] en GNU radio buscando que las señales puedan ser visualizadas correctamente sin que el computador se ralentice demasiado. Inicialmente generamos una señal senoidal de frecuencia 8[kHz], amplitud 0.5[V] y ruido de 0.09[V]. El filtro con frecuencias de corte 340[Hz] y 21050[Hz] elimina el ruido
+Se establece mediante prueba y error una frecuencia de muestreo de 25e6/32[Hz] = 78.1250[kHz] en GNU radio buscando que las señales puedan ser visualizadas correctamente sin que el computador se ralentice demasiado. Inicialmente generamos una señal senoidal de frecuencia 8[kHz], amplitud 0.5[V] y ruido de 0.09[V]. El filtro con frecuencias de corte 340[Hz] y 21.050[kHz] elimina el ruido en gran medida.
 ![image](https://github.com/user-attachments/assets/3ac17e59-2b61-4050-9250-4073f4f6cbf3)
 
-act1_square
+En esta segunda imagen cambiamos la forma de onda por una cuadrada con frecuencia de 3.6[kHz], el filtrado no parece tener un resultado tan bueno como en el caso de la señal senoidal, probablemente se deba a que es más complicado filtrar una señal cuadrada, pues su espectro tiene una serie infinita de armónicos que pueden llegar a verse afectados por el filtro, mientras que la senoidal solo tiene la frecuencia fundamental.
 ![image](https://github.com/user-attachments/assets/c2b5ec21-ce45-483a-aaa8-6b7b626fb371)
 
-act1_triangular
+Para esta señal triangular aumentamos el voltaje de ruido a 0.3[V], y notamos que las frecuencias de corte establecidas (340[Hz] y 21.050[kHz]) no son buenas porque el ancho de banda es innecesariamente grande para la frecuencia de la señal establecida en 3.6 [kHz], esto hace que el filtro deje pasar demasiado ruido, y para mejorar los resultados se priorizaría disminuir la frecuencia de corte alta a un valor más bajo, alrededor de 5[kHz].
 ![image](https://github.com/user-attachments/assets/acd20367-7410-4e68-b063-e943798d8855)
 
 coseno_1
