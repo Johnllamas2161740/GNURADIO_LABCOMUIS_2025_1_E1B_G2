@@ -65,15 +65,15 @@ triangular_4
 
 ### Actividad 2: Fenómenos de canal en el osciloscopio
 
-triangular
+La señal transmitida es modulada en amplitud, para la frecuencia de portadora de 100[MHz] y la frecuancia de mensaje de 1[kHz] se observa en el osciloscopio que la señal es distinguible por como cambia la amplitud segun su forma mientras que la ondulación es indistinguble debido a la alta frecuencia.
 ![image](https://github.com/user-attachments/assets/022d888a-a73a-47d8-88a3-212a453b3bb5)
 
-senoidal
+Se evidencia el efecto del ruido en la amplitud de la señal, en general es mucho más notable en el osciloscopio que en la simulación.
 ![image](https://github.com/user-attachments/assets/344aa7cb-3728-46c9-b8a3-4aeb68d617ec)
-
-senoidal con ruido
 ![image](https://github.com/user-attachments/assets/431a6291-44f1-472e-89ec-2b9b17c0a8af)
+A mayor ruido menor es la diferencia entre la potencia de la señal y el ruido, por lo tanto, sabemos que la relaci+on señal a ruido disminuye para este caso, y seria mejorable aplicando el filtro pasabanda con unas frecuencias de corte adecuadas.
 
+Modificar la frecuencia de portadora no tiene un efecto notable en el osciloscopio debido a que es una señal modulada en amplitud y la visualización en el osciloscopio es de la onda periodica, si la señal fuera FM se observaria como la onda se expande y se comprime. El efecto de usar cables de diferente longitud para la transmision es que entre mayor sea esta mayor es la atenuación, y por lo tanto en el osciloscopio se visualiza una señal de menor amplitud.
 
 ### Actividad 3: Fenómenos de canal en el analizador de espectro
 
