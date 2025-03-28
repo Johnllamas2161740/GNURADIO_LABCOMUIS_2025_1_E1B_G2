@@ -27,10 +27,10 @@ Uso de IA: [Indicar si se usó IA y para qué aspectos específicos, por ejemplo
 ## Contenido
 
 ### Resumen
-A continuación se presentará en el siguiente informe de laboratorio la segunda práctica del semestre en el cual
+En este segundo informe se presentan los resultados obtenidos en la segunda práctica del laboratorio de comunicaciones I, que está enfocado en el análisis de modelos de canal y sus efectos en señales transmitidas. Se realizaron simulaciones en GNU Radio y se hizo uso del osciloscopio y analizador de espectro para observar el efecto del ruido, la modulación, el filtro, etc. Además de esto, también está el efecto de atenuación en cables de diferentes longitudes y se evidenciado por la diferencia de potencia entre cada caso.
 
 ### Introducción
-En
+El estudio de los modelos de canal es fundamental en el análisis y diseño de sistemas de comunicación, ya que permite comprender cómo las señales se ven afectadas por distintos factores durante su transmisión. En esta práctica, se realizaron 4 actividades con un enfoque dirigido a evidenciar todo esto parte por parte. Inicialmente con las simulaciones en GNU Radio para observar el efecto del ruido y el filtrado sobre diferentes tipos de señales. Luego se utilizó el osciloscopio para examinar señales AM y evaluar la influencia de la atenuación y el ruido. También se uso el analizador de espectro para visualizar el impacto del ruido en la respuesta en frecuencia y se visualizo la distorsion por el offset de frecuencia y variación de la frecuencia de portadora, identificando cómo pequeñas variaciones pueden afectar la señal recibida.
 
 ### Procedimiento
 
@@ -71,58 +71,47 @@ La señal transmitida es modulada en amplitud, para la frecuencia de portadora d
 Se evidencia el efecto del ruido en la amplitud de la señal, en general es mucho más notable en el osciloscopio que en la simulación.
 ![image](https://github.com/user-attachments/assets/344aa7cb-3728-46c9-b8a3-4aeb68d617ec)
 ![image](https://github.com/user-attachments/assets/431a6291-44f1-472e-89ec-2b9b17c0a8af)
+
 A mayor ruido menor es la diferencia entre la potencia de la señal y el ruido, por lo tanto, sabemos que la relaci+on señal a ruido disminuye para este caso, y seria mejorable aplicando el filtro pasabanda con unas frecuencias de corte adecuadas.
 
 Modificar la frecuencia de portadora no tiene un efecto notable en el osciloscopio debido a que es una señal modulada en amplitud y la visualización en el osciloscopio es de la onda periodica, si la señal fuera FM se observaria como la onda se expande y se comprime. El efecto de usar cables de diferente longitud para la transmision es que entre mayor sea esta mayor es la atenuación, y por lo tanto en el osciloscopio se visualiza una señal de menor amplitud.
 
 ### Actividad 3: Fenómenos de canal en el analizador de espectro
 
-captura?
-![image](https://github.com/user-attachments/assets/832fdd2a-7af4-4cff-8a6b-84f8f6021b88)
+El efecto que tiene el ruido en la respuesta en frecuencia de la señal consiste en que aumenta nivel de ruido en el analizador de espectro hasta estar al nivel de los armónicos y que estos ya no puedan ser identificados visualmente.
+![image](https://github.com/user-attachments/assets/014aead3-217c-4e96-b8c3-3a8c25f68620)
+![image](https://github.com/user-attachments/assets/0dac1060-4ac1-40dd-9f66-8dc291287f9c)
 
-triangularact2
+El mismo efecto evidenciado en la simulación de GNU radio
 ![image](https://github.com/user-attachments/assets/56c21060-30f4-4c3b-bfa3-a36da3c8aefa)
-
-triangularact2_2
 ![image](https://github.com/user-attachments/assets/c7fbb41b-72f6-4989-b706-15a4c1f138ce)
 
-
+Efecto de la desviación de frecuencia en el analizador de espectro.
+![image](https://github.com/user-attachments/assets/1345018d-fd63-4306-a9e1-264c4f8503a3)
 
 ### Actividad 4:  Efectos de los fenómenos de canal en la conversión de frecuencia
 
-visualizar_g_compleja
-
-![image](https://github.com/user-attachments/assets/24049f1d-b9c0-4c47-a020-093f2cb4b06d)
-
-carrier_daña_señal
+En esta actividad notamos que modificar la frecuencia de portadora de, por ejemplo, 100[MHz] a 100.001[MHz] genera una distorsión y comportamiento inesperado por el desfase entre la señal transmitida y la recibida.
 ![image](https://github.com/user-attachments/assets/de5c9c88-14e9-4cc7-842d-56584a43fd6e)
 
-freq_offset1
+Esta distorsión no es fija sino que es dependiente del momento en el cual ocurra el cambio de la frecuencia. Mediante prueba y error puede modificarse el parámetro hasta notar que la señal recibida coincide en gran medida con la transmitida.
 ![image](https://github.com/user-attachments/assets/69c22cff-42b8-4131-865d-90245b8ab6ef)
-
-freq_offset2
 ![image](https://github.com/user-attachments/assets/ebf89ea3-f750-40b8-8867-6febbf8e0034)
-
-freq_offset3
 ![image](https://github.com/user-attachments/assets/a8b1dfc5-72fb-43e0-93e5-ceffe9ed8e34)
-
-freque_offset4
 ![image](https://github.com/user-attachments/assets/f117fc87-e87e-446e-ba47-86376abbc31a)
 
-freq_offset5_espectro
+Este fenómeno también es visualizable en el dominio de la frecuencia.  También se verifica que modificar el offset de la señal modifica el nivel de portadora, que corresponde a la frecuencia cero.
 ![image](https://github.com/user-attachments/assets/7393114f-3d93-4b5f-aa39-5bf12db5593b)
-
-observacion_ganancia
 ![image](https://github.com/user-attachments/assets/d0baff28-9859-4b76-9426-233607c52a5c)
+
+Se midió la potencia para la misma señal utilizando cables de diferente longitud. Los resultados muestran que para el cable más corto la potencia recibida fue de 2.86[dBm] mientras que para el cable más largo fue de -5.52[dBm], la diferencia entre estas indica que existe una atenuacion de aproximadamente 8.38[dB] al usar el cable más largo en comparación al más corto.
+![image](https://github.com/user-attachments/assets/ca5ba9d1-937b-40b1-b4e9-5bc9d82ab11b)
+
+![image](https://github.com/user-attachments/assets/c409d702-cd5e-4c5f-98b7-c567f0a5b4e3)
 
 
 ### Conclusiones
 En la actividad 1, al introducir voltaje de ruido notamos que este se aplica tanto a la parte real como la imaginaria de la señal, teniendo en cuenta que la parte imaginaria deberia ser un cero constante para una señal real podemos concluir que el ruido no permite que las señales reales sean perfectamente reales, pues siempre habrá una pequeña componente imaginaria que se busca minimizar con el filtro para que pueda ser despreciada.
-### Referencias (#####################)
-
-- [Rohde & Schwarz, 2017] Rohde & Schwarz, *R&S RTB2000 Digital Oscilloscope: User Manual*, Rohde & Schwarz, 2017
-- [Rohde & Schwarz, 2017] Rohde & Schwarz, *R&S®FPC1000 Spectrum Analyzer: User Manual*, Rohde & Schwarz GmbH & Co. KG, 2017.
-- [NI, 2025] National Instruments, *USRP-2920 Specifications*, National Instruments, Feb. 2025.
 
 ---
 
