@@ -64,3 +64,9 @@ foto caso 2
 foto caso 3
 
 ![image](https://github.com/user-attachments/assets/f68118ea-a924-4842-b784-f7cff88bb995)
+
+### Actividad 3. Fuente aleatoria binaria
+
+### Actividad 4. Señal de audio
+
+
