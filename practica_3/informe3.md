@@ -31,4 +31,36 @@ El estudio de
 
 ### Procedimiento
 
-### Actividad 1. A
+### Actividad 1. Mediciones en el dominio de la frecuencia
+
+tabla 1
+
+![image](https://github.com/user-attachments/assets/c2937267-edb9-4c82-9a04-6ca97dfef78c)
+
+foto caso 1
+
+![image](https://github.com/user-attachments/assets/60c786b7-9966-4646-9f0c-ae88822ed4c8)
+
+foto caso 2
+
+![image](https://github.com/user-attachments/assets/fe47ef54-c550-492a-92ff-b566564fde23)
+
+foto caso 3
+
+![image](https://github.com/user-attachments/assets/5dcb8da4-865b-40fc-9548-4d5de396ddea)
+
+### Actividad 2. Mediciones en el osciloscopio
+
+tabla 2
+
+foto caso 1
+
+![image](https://github.com/user-attachments/assets/b217964a-fd9a-4e0e-8fef-17e2827452d9)
+
+foto caso 2
+
+![image](https://github.com/user-attachments/assets/b1f60055-8a99-4a06-947a-904deacd0746)
+
+foto caso 3
+
+![image](https://github.com/user-attachments/assets/f68118ea-a924-4842-b784-f7cff88bb995)
